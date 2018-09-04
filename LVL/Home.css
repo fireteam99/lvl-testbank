@@ -1,0 +1,102 @@
+
+#logo-nav{
+	width:200px;
+	height:60px;
+
+
+}
+#above-nav-bg{
+	width:100%;
+	height:50px;
+
+}
+
+#registerbtn{
+	margin-left: 10px;
+}
+
+#jumbo-one{
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+	background-image: url(adult-blur-books-261909.jpg);
+	background-size:cover;
+	background-position: center;
+	margin-bottom: 0px;
+	border-radius:0px;
+}
+@media (min-width: 978px){
+	.content{
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+}
+#hr-one{
+	width:300px;
+	color: #3177d8;
+	height:2px;
+	background-color: #3177d8;
+}
+#hr-two{
+	width:50%;
+	color: #3177d8;
+	height:2px;
+	background-color: #3177d8;
+}
+.content{
+	text-align: center;
+	color:white;
+}
+body{
+	margin-bottom: 0px;
+}
+.col-text{
+	color:white;
+	text-align: center;
+}
+#jumbo-two{
+	background-color:#92c6db;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+#view-exams{
+	text-align: center;
+	margin-bottom: 10px;
+}
+#post-exam{
+	text-align: center;
+}
+#col1jum2{
+	text-align: center;
+}
+#col2jum3{
+	text-align: center;
+}
+
+#piccol2jum2{
+	display:block;
+	margin: auto;
+	height:250px;
+	width:height;
+}
+#view-exams2{
+	margin-bottom: 30px;
+}
+#jumbo-three{
+	background-color:white;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+#hr-three{
+	margin-top: 100px;
+	width:100%;
+	color: #3177d8;
+	height:5px;
+	background-color: #3177d8;
+}
+#imgsources{
+	margin-top: 100px;
+	text-align: center;
+}
+footer{
+	background-color:#92c6db;
+	height:100px; 
+}

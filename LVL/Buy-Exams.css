@@ -1,0 +1,60 @@
+#logo-nav{
+	width:200px;
+	height:60px;
+
+
+}
+#above-nav-bg{
+	width:100%;
+	height:50px;
+
+}
+#registerbtn{
+	margin-left: 10px;
+}
+
+#select-school{
+	text-align: center;
+	margin-top: 50px;
+	font-family: 'Lato', sans-serif;
+}
+#select-department{
+	text-align: center;
+	margin-top: 50px;
+	font-family: 'Lato', sans-serif;
+}
+#select-course{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	font-family: 'Lato', sans-serif;
+}
+select{
+    text-align-last:center;
+  
+  
+}
+
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+.main-container {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 100px; /* height of your footer */
+}
+footer{
+	background-color:#92c6db;
+	height:100px; 
+	  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 100px;
+}

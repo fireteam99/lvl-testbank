@@ -1,0 +1,90 @@
+#logo-nav{
+	width:200px;
+	height:60px;
+
+
+}
+#above-nav-bg{
+	width:100%;
+	height:50px;
+
+}
+#registerbtn{
+	margin-left: 10px;
+}
+h1{
+	text-align: center;
+
+
+}
+#jumbo-one{
+	background-color:  #000080;
+	color:white;
+	padding-bottom: 45px;
+	padding-left: 5%;
+	padding-right: 5%; 
+	border-radius: 0px;
+
+
+}
+h2{
+	padding-bottom: 10px;
+	padding-left: 1%;
+}
+#filter{
+	display: inline;
+
+}
+#select-prof{
+	padding-left: 10px;
+}
+@media (max-width: 700px){
+	#jumbo-one{
+		font-size: 3vw;
+	}
+	#course-name{
+		font-size: 5vw;
+	}
+	#school{
+		font-size:4vw;
+	}
+	#filter{
+		font-size:4vw;
+	}
+}
+
+.col-size{
+	margin-top: 10px;
+	text-align: center;
+	margin: auto;
+
+
+}
+.p{
+	margin-bottom: 1px;
+
+}
+
+
+.img-fit{
+	padding-top: 5px;
+	width:100%;
+	object-fit: cover;
+	max-height: 200px;
+	max-width: 125px;
+	border-bottom: 1px solid #dee2e6;
+
+}
+.border{
+	margin-bottom: 5px;
+}
+.row{
+	margin-bottom: 20px;
+}
+
+
+footer{
+	background-color:#92c6db;
+	height:100px; 
+	margin-top: 100px;
+}
