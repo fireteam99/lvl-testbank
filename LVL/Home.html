@@ -38,7 +38,7 @@
 
 				</li>
 				<li class="nav-item">
-					<a class="nav-link navmenu-text" href="#">Post an Exam</a>
+					<a class="nav-link navmenu-text" href="Post-Exam-Form.html">Post an Exam</a>
 
 				</li>
 				<li class="nav-item">
@@ -51,9 +51,38 @@
 			</ul>
 
 			<form class="form-inline my-2 my-lg-0">
-				<button type="button" class="btn btn-outline-primary">Login</button>
-				<button type="button" class="btn btn-outline-primary"id="registerbtn">Register</button>
-
+				<button type="button" class="btn btn-primary" id="loginbtn" data-toggle="modal" data-target="#exampleModal">Login</button>
+				<button type="button" class="btn btn-primary" id="registerbtn"data-toggle="modal" data-target="#Register">Register</button>
+				<div class="modal fade" id="Register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Sign up now so you can easily access the exams you've bought/posted</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body" id="registerform">
+								<form id="register-form" action="#" method="post">
+									<label>Email:<input type="email"></label>
+									<label>Login Username:<input type="text"></label>
+									<label>Password:<input type="password"></label>
+									<label>School:<select>
+										<option value="" selected disabled>--School--</option>
+										<option value="Lehigh University">Lehigh University</option>
+										<option value="Rutgers University">Rutgers University</option>
+										<option value="note">Want these in Alphabetical Order</option>
+										<option value="note">And want dropdowns to be searchable</option>
+										<option value="note">Need the option to add</option>
+									</select></label>
+								</div>
+								<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</form>
 
 		</div>

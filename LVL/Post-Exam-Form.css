@@ -12,47 +12,53 @@
 #registerbtn{
 	margin-left: 10px;
 }
-
 #select-school{
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 20px;
 	font-family: 'Lato', sans-serif;
 }
 #select-department{
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 20px;
 	font-family: 'Lato', sans-serif;
 }
 #select-course{
 	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	font-family: 'Lato', sans-serif;
 }
 select{
     text-align-last:center;
 }
+@media (min-width:991px){
+	#col2{
+		border-left:1px solid rgba(0,0,0,.1);
+		
+	}
+	#col1{
 
-html,
-body {
- height: 100%;
- position: relative;
+	}
 }
-.main-container {
- min-height: 100vh; /* will cover the 100% of viewport */
- overflow: hidden;
- display: block;
- position: relative;
- padding-bottom: 100px; /* height of your footer */
+@media (max-width: 991px){
+	#col2{
+		text-align: center;
+	}
+	#col1{
+
+		text-align: center;
+	}
+}
+
+.button-center{
+	margin-top: 25px;
+	text-align: center;
+}
+#col2{
+	line-height: 2;
 }
 footer{
 	background-color:#92c6db;
 	height:100px; 
-	  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  text-align: center;
-  margin-top: 100px;
+	margin-top: 100px;
 }

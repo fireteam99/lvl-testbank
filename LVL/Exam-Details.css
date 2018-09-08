@@ -55,6 +55,9 @@
 
 
 }
+#related-exams{
+	margin-top: 75px;
+}
 .img-fit{
 	padding-top: 5px;
 	width:100%;
@@ -63,6 +66,9 @@
 	max-width: 125px;
 	border-bottom: 1px solid #dee2e6;
 
+}
+#course-name{
+	margin-top: 25px;
 }
 footer{
 	background-color:#92c6db;
