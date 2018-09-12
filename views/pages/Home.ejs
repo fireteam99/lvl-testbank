@@ -3,91 +3,14 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>LVL Test Bank-Home</title>
-	<link rel="stylesheet" type="text/css" href="css/Home.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/Home.css">
+
 </head>
 <body>
 	<div class="above-nav-bg">
 
-		<nav class="navbar" style="background-color: #92c6db;">
-
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs 4">
-					<a href="Home.html" id="hd1"><img src="LVLTestBank-KS04a-A01a.png" id="logo-nav"></a>
-				</div>
-			</div>
-		</nav>
-	</div>
-
-	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #92c6db; padding-top:0px">
-		<p class="navbar-text visible-xs-inline-block"></p>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span id="hamburger-text">Menu</span>
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-			<ul class="navbar-nav mr-auto">
-
-				<li class="nav-item active">
-					<a class="nav-link navmenu-text" href="Home.html">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link navmenu-text" href="Buy-Exams.html">Buy Exams</a>
-
-				</li>
-				<li class="nav-item">
-					<a class="nav-link navmenu-text" href="Post-Exam-Form.html">Post an Exam</a>
-
-				</li>
-				<li class="nav-item">
-					<a class="nav-link navmenu-text" href="#">Honor Code</a>
-
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="navtext" href="#">Check Out</a>
-				</li>
-			</ul>
-
-			<form class="form-inline my-2 my-lg-0">
-				<button type="button" class="btn btn-primary" id="loginbtn" data-toggle="modal" data-target="#exampleModal">Login</button>
-				<button type="button" class="btn btn-primary" id="registerbtn"data-toggle="modal" data-target="#Register">Register</button>
-				<div class="modal fade" id="Register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Sign up now so you can easily access the exams you've bought/posted</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body" id="registerform">
-								<form id="register-form" action="#" method="post">
-									<label>Email:<input type="email"></label>
-									<label>Login Username:<input type="text"></label>
-									<label>Password:<input type="password"></label>
-									<label>School:<select>
-										<option value="" selected disabled>--School--</option>
-										<option value="Lehigh University">Lehigh University</option>
-										<option value="Rutgers University">Rutgers University</option>
-										<option value="note">Want these in Alphabetical Order</option>
-										<option value="note">And want dropdowns to be searchable</option>
-										<option value="note">Need the option to add</option>
-									</select></label>
-								</div>
-								<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-primary">Save changes</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</form>
-
-		</div>
-
-	</nav>
+		<% include ../partials/navbar %>
 
 
 
@@ -123,7 +46,7 @@
 				<a href="Buy-Exams.html"><button type="button" class="btn btn-primary" id="view-exams2">View Exams</button></a>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"id="col2jum2">
-				<img src="if_knowledge_277120.png"id="piccol2jum2">
+				<img src="images/if_knowledge_277120.png"id="piccol2jum2">
 			</div>
 		</div>
 
@@ -131,7 +54,7 @@
 	<div class="jumbotron" id="jumbo-three">
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"id="col1jum3">
-				<img src="if_Payday_Loan_274999.png"id="piccol2jum2">
+				<img src="images/if_Payday_Loan_274999.png"id="piccol2jum2">
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"id="col2jum3">
 				<hr id="hr-two">
@@ -145,19 +68,7 @@
 
 	</div>
 
-
-
-
-
-	<footer class="page-footer font-small blue" id="footer">
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">Copyright © 2018:
-    <a href="https://mdbootstrap.com/bootstrap-tutorial/"> LVLbank.com</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
+	<% include ../partials/footer %>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

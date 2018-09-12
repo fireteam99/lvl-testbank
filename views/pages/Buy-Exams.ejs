@@ -3,65 +3,15 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>LVL Test Bank-Buy Exams</title>
-	<link rel="stylesheet" type="text/css" href="css/Buy-Exams.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/Buy-Exams.css">
 </head>
 </head>
 <body>
 
 <div class="main-container">
-	<div class="above-nav-bg">
-
-		<nav class="navbar" style="background-color: #92c6db;">
-
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs 4">
-					<a href="Home.html" id="hd1"><img src="LVLTestBank-KS04a-A01a.png" id="logo-nav"></a>
-				</div>
-			</div>
-		</nav>
-	</div>
-
-	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #92c6db; padding-top:0px">
-		<p class="navbar-text visible-xs-inline-block"></p>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span id="hamburger-text">Menu</span>
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link navmenu-text" href="Home.html">Home</a>
-
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link navmenu-text" href="Buy-Exams.html">Buy Exams <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link navmenu-text" href="Post-Exam-Form.html">Post an Exam</a>
-
-				</li>
-				<li class="nav-item">
-					<a class="nav-link navmenu-text" href="#">Honor Code</a>
-
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="navtext" href="#">Check Out</a>
-				</li>
-			</ul>
-
-			<form class="form-inline my-2 my-lg-0">
-				<button type="button" class="btn btn-outline-primary">Login</button>
-				<button type="button" class="btn btn-outline-primary"id="registerbtn">Register</button>
-
-			</form>
-		</div>
-
-	</nav>
-
+	<% include ../partials/navbar %>
 	<div id="select-school">
 		<h1>SCHOOL</h1>
 		<select>
@@ -86,15 +36,8 @@
 	</div>
 
 
+	<% include ../partials/footer %>
 
-	<footer class="page-footer font-small blue" id="footer">
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">Copyright © 2018:
-    <a href="https://mdbootstrap.com/bootstrap-tutorial/"> LVLbank.com</a>
-  </div>
-  <!-- Copyright -->
-  </footer>
 </div>
 
 
