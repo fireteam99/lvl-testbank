@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
+const dbConfig = require('./config/db.js');
+const mongoose = require('mongoose');
 
 const app = express();
 
@@ -14,28 +16,57 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(cors());
 
-// view routes
-app.get('/', (req, res) => {
-  res.render('pages/Home');
-});
+// deprecation stuff
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
 
-app.get('/buy', (req, res) => {
-  res.render('pages/Buy-Exams');
-});
+// connect to db
+mongoose.connect(dbConfig.url, { useNewUrlParser: true });
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', () => {
+    // view routes
+    app.get('/', (req, res) => {
+        res.render('pages/Home');
+    });
 
-app.get('/sell', (req, res) => {
-  res.render('pages/Post-Exam-Form');
-});
+    app.get('/buy', (req, res) => {
+        res.render('pages/Buy-Exams');
+    });
 
-app.get('/exam-details', (req, res) => {
-  res.render('pages/Exam-Details');
-});
+    app.get('/sell', (req, res) => {
+        res.render('pages/Post-Exam-Form');
+    });
 
-app.get('/exams', (req, res) => {
-  res.render('pages/Exam-Page-Template');
-});
+    app.get('/exam-details', (req, res) => {
+        res.render('pages/Exam-Details');
+    });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, ()=> {
-  console.log('Server running on port ' + PORT);
-})
+    app.get('/exams', (req, res) => {
+        res.render('pages/Exam-Page-Template');
+    });
+
+    // testing db connection
+    app.get("/test/:id", (req, res) => {
+        res.send(req.params);
+    });
+
+    const testSchema = new mongoose.Schema({
+        name: String
+    });
+
+    const Test = mongoose.model('Test', testSchema);
+    const test = new Test({ name: "tester321" });
+    console.log(test.name);
+
+    test.save(function (err, test) {
+        if (err) return console.error(err);
+    });
+    
+    const PORT = process.env.PORT || 3000;
+    app.listen(PORT, ()=> {
+        console.log('Server running on port ' + PORT);
+    });
+
+});
