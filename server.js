@@ -27,25 +27,6 @@ const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
     // view routes
-    app.get('/', (req, res) => {
-        res.render('pages/Home');
-    });
-
-    app.get('/buy', (req, res) => {
-        res.render('pages/Buy-Exams');
-    });
-
-    app.get('/sell', (req, res) => {
-        res.render('pages/Post-Exam-Form');
-    });
-
-    app.get('/exam-details', (req, res) => {
-        res.render('pages/Exam-Details');
-    });
-
-    app.get('/exams', (req, res) => {
-        res.render('pages/Exam-Page-Template');
-    });
 
     // testing db connection
     app.get("/test/:id", (req, res) => {
