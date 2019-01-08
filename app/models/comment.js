@@ -5,9 +5,9 @@ const CommentSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Username is required.']
     },
-    text: {
+    body: {
         type: String,
-        required: [true, 'Message body is required.']
+        required: [true, 'Comment body is required.']
     }
 });
 

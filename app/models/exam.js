@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator');
-const CommentSchema = require('./comment.js')
+const CommentSchema = require('./comment.js');
 
 const ExamSchema = new mongoose.Schema({
     buyerCount: {
@@ -20,10 +20,12 @@ const ExamSchema = new mongoose.Schema({
         type: Number
     },
     likes: {
-        type: Number
+        type: Number,
+        min: [0, 'Number of likes must be positive.']
     },
     dislikes: {
-        type: Number
+        type: Number,
+        min: [0, 'Number of dislikes must be positive.']
     },
     price: {
         type: Number,
