@@ -21,7 +21,7 @@ const UserSchema = new mongoose.Schema({
         minlength: [5, 'Password must have a minimum length of 5 characters.'],
         required: [true, 'Password is required.']
     }
-})
+});
 
 UserSchema.plugin(uniqueValidator);
 module.exports = mongoose.model('users', UserSchema);

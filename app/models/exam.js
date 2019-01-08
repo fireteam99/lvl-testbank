@@ -1,11 +1,15 @@
 const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator');
-const CommentSchema = require('./comment.js');
+const CommentSchema = require('./comment.js'); 
 
 const ExamSchema = new mongoose.Schema({
     buyerCount: {
         type: Number,
         min: [0, 'Buyer count must be positive.']
+    },
+    source: {
+        type: String,
+        required: [true, 'Source is required.']
     },
     seller: {
         type: String,
