@@ -25,6 +25,10 @@ const ExamSchema = new mongoose.Schema({
     seller: {
         type: String,
         minlength: [1, 'Seller cannot be empty.'],
+        required: [true, 'Source is required.']
+    },
+    seller: {
+        type: String,
         required: [true, 'Seller is required.'],
         index: true
     },
@@ -51,3 +55,4 @@ const ExamSchema = new mongoose.Schema({
 });
 
 module.exports = { model: mongoose.model("exams", ExamSchema), schema: ExamSchema });
+
